@@ -7,19 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="footer noneBorder"></div>
-    <p id="salary"></p>
+    <div class="footer">
+        <h1>Salary calculator</h1>
+        <div>
+            <a href="https://discord.com/users/505399650438610944"><img src="discord.png" alt="discord"></a>
+            <a href="https://github.com/gamerlord295"><img src="github.png" alt="github"></a>
+        </div>
+    </div>
+    <p id="salary">0</p>
     <div class="main" id="form">
         <select class="center" id="type">
             <option value="+">+</option>
             <option value="-">-</option>
         </select>
-        <input type="number" min="1" id="input" value="">
+        <input type="number" min="1" id="input" value="" placeholder="Enter a number">
         <input type="button" id="submit" value="add to list" onclick="add()">
     </div>
-    <div id="list">
+    <div id="pluslist">
         <ul id="plus">
         </ul>
+    </div>
+    <div id="minuslist">
         <ul id="minus">
         </ul>
     </div>
